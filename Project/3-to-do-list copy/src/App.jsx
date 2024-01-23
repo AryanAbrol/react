@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState} from "react";
 import Appn from "./components/Appn";
 import Appname from "./components/Appname";
 import Welcomemsg from "./components/welcomemsg";
@@ -9,7 +9,6 @@ function App() {
   const [todoitem, settodoitem] = useState([]);
 
   const onnewitem = (itemname, itemdate) => {
-    console.log(`${itemname} ${itemdate}`);
     const newtodoitem = [...todoitem, { tname: itemname, tdate: itemdate },];
     settodoitem(newtodoitem);
   };
