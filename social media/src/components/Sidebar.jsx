@@ -1,8 +1,8 @@
-const Sidebar = ({ selectedtab }) => {
+const Sidebar = ({ selectedtab, setselectedtab }) => {
   return (
     <div
       class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary sidebar"
-      style={{ width: "280px" }}
+      style={{ width: "180px" }}
     >
       <a
         href="/"
@@ -15,7 +15,7 @@ const Sidebar = ({ selectedtab }) => {
       </a>
       <hr />
       <ul class="nav nav-pills flex-column mb-auto">
-        <li class="nav-item">
+        <li class="nav-item" onClick={() => setselectedtab("Home")}>
           <a
             href="#"
             class={`nav-link ${selectedtab === "Home" && "active"}`}
@@ -27,12 +27,10 @@ const Sidebar = ({ selectedtab }) => {
             Home
           </a>
         </li>
-        <li>
+        <li onClick={() => setselectedtab("createpost")}>
           <a
             href="#"
-            class={`nav-link link-body-emphasis active${
-              selectedtab === "createpost" && "active"
-            }`}
+            class={`nav-link ${selectedtab === "createpost" && "active"}`}
           >
             <svg class="bi pe-none me-2" width="16" height="16">
               <use xlinkHref="#speedometer2"></use>
