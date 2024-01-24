@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 function App() {
-   let item = ["Dal", "Panner", "Ambarsari chicken", "Salad", "Roti"];
+  let item = ["Dal", "Panner", "Ambarsari chicken", "Salad", "Roti"];
   //  let item=[]
   //  let expert = item.length===0 ? <h3>I am still hungry</h3>:null
 

@@ -1,6 +1,6 @@
 import styles from "./Buttoncontainer.module.css";
 
-const Buttoncontainer = ({onButtonClick}) => {
+const Buttoncontainer = ({ onButtonClick }) => {
   const button = [
     "c",
     "1",

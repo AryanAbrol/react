@@ -14,7 +14,7 @@ function Todoitem1({ name, date, onDeleteClick }) {
             className="btn btn-danger kgbutton bg"
             onClick={() => onDeleteClick(name)}
           >
-           <MdDelete />
+            <MdDelete />
           </button>
         </div>
       </div>

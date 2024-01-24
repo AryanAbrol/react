@@ -5,23 +5,17 @@ import Display from "./components/Display";
 
 function App() {
   const [calval, setcalval] = useState("");
-  const onButtonClick = (buttontext) =>
-  {
-    if(buttontext==='c')
-    {
+  const onButtonClick = (buttontext) => {
+    if (buttontext === "c") {
       setcalval("");
-    }
-    else if(buttontext==='=')
-    {
+    } else if (buttontext === "=") {
       const newstate = eval(calval);
       setcalval(newstate);
-    }
-    else
-    {
-      const displayval = calval+buttontext;
+    } else {
+      const displayval = calval + buttontext;
       setcalval(displayval);
     }
-  }
+  };
 
   return (
     <div className={styles.calculator}>
